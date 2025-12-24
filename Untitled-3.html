@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Chakreshwar Mandir | Chakan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;700&family=Martel:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --deep-red: #8B0000;
+            --gold: #D4AF37;
+            --cream: rgba(255, 253, 208, 0.96);
+        }
+
+        body, html { margin: 0; padding: 0; font-family: 'Karma', serif; scroll-behavior: smooth; }
+
+        /* HOME PAGE BACKGROUND - Updated to match your folder screenshot */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('bg-home.png.png') no-repeat center center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; border-bottom: 8px solid var(--gold);
+        }
+
+        /* OTHER PAGES BACKGROUND - Updated to match your folder screenshot */
+        .content-wrapper {
+            background: linear-gradient(var(--cream), var(--cream)), 
+                        url('D:\Chakreshwar_Website\(9) Instagram_files\371834214_3139995662968910_9011897794310361034_n.jpg.jpg') no-repeat center center fixed;
+            background-size: cover; min-height: 100vh;
+        }
+
+        .hero h1 { font-family: 'Martel', serif; font-size: 3.5rem; margin: 0; color: var(--saffron); text-shadow: 3px 3px 10px rgba(0,0,0,0.8); }
+        .hero p { font-size: 1.3rem; letter-spacing: 2px; font-weight: bold; text-shadow: 2px 2px 5px black; }
+
+        nav { background-color: var(--deep-red); padding: 15px; position: sticky; top: 0; z-index: 1000; text-align: center; border-bottom: 4px solid var(--gold); }
+        nav a { color: var(--gold); text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 50px 20px; }
+        .section-box { background: rgba(255, 255, 255, 0.98); padding: 40px; border-radius: 15px; border: 1.5px solid var(--saffron); margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        h2 { color: var(--deep-red); font-family: 'Martel', serif; font-size: 2.2rem; text-align: center; border-bottom: 3px double var(--saffron); padding-bottom: 10px; margin-bottom: 30px; }
+
+        /* Rituals Gallery Grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .gallery-grid img { width: 100%; height: 350px; object-fit: cover; border: 4px solid var(--gold); border-radius: 8px; transition: 0.3s; }
+        .gallery-grid img:hover { transform: scale(1.03); }
+
+        .btn-seva { background-color: var(--saffron); color: white; padding: 18px 35px; text-decoration: none; font-size: 1.2rem; font-weight: bold; border-radius: 8px; display: inline-block; margin-top: 25px; border: 2px solid var(--deep-red); }
+
+        .map-container { width: 100%; height: 450px; border-radius: 12px; overflow: hidden; border: 4px solid var(--gold); }
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 60px 20px; border-top: 6px solid var(--saffron); }
+    </style>
+</head>
+<body>
+
+    <section class="hero" id="home">
+        <div style="font-size: 4rem; color: var(--saffron); margin-bottom: 10px;">ॐ</div>
+        <h1>SHREE CHAKRESHWAR MANDIR</h1>
+        <p>CHAKAN, TALUKA - KHED, DISTRICT - PUNE | 410501</p>
+        <a href="#seva" class="btn-seva">PRASAD & SEVA REGISTRATION</a>
+    </section>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rituals">Rituals & Darshan</a>
+        <a href="#seva">Donations</a>
+        <a href="#location">Find Us</a>
+    </nav>
+
+    <div class="content-wrapper">
+        
+        <div class="container" id="rituals">
+            <div class="section-box">
+                <h2>Divine Rituals & Darshan</h2>
+                <div class="gallery-grid">
+                    <img src="(9) Instagram_files/532933844_18040978889655550_8182349010960558465_n.jpg" alt="Ritual 1">
+                    <img src="(9) Instagram_files/535713617_18040986908655550_6066009078599787179_n.webp" alt="Ritual 2">
+                    <img src="(9) Instagram_files/536530093_18041163206655550_4074728652485572298_n.webp" alt="Ritual 3">
+                    <img src="(9) Instagram_files/539177168_18041710718655550_1672807852564401746_n.webp" alt="Ritual 4">
+                    <img src="(9) Instagram_files/539391418_18041766713655550_2974576938945910285_n.webp" alt="Ritual 5">
+                    <img src="(9) Instagram_files/541230785_18042969359655550_5054119472770359228_n.webp" alt="Ritual 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="seva">
+            <div class="section-box" style="text-align: center;">
+                <h2>Anndan & Mandir Seva</h2>
+                <div style="margin-top: 20px; padding: 30px; border: 2px dashed var(--deep-red); background: white; border-radius: 12px;">
+                    <h3>Official Seva Form</h3>
+                    <p>Register for Monday Prasad or donate towards temple renovation.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScLwc-BJ8LbF9AqjmLucRUerEg8CyYLnlJnVSEefAZ0ndHJTA/viewform?usp=dialog" target="_blank" class="btn-seva">
+                        CLICK HERE TO REGISTER
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="location">
+            <div class="section-box">
+                <h2>Find the Mandir</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.632234057639!2d73.8540441!3d18.7691653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2c98ac693842b%3A0xbb6fa9a3d1a2718e!2sShree%20Chakreshwar%20Mandir%20Chakan!5e0!3m2!1sen!2sin!4v1700000000000" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div style="font-size: 2rem; color: var(--saffron);">ॐ</div>
+        <h3>SHREE CHAKRESHWAR MANDIR, CHAKAN</h3>
+        <p>Taluka-Khed, Dist-Pune, MH 410501</p>
+        <p style="color: var(--gold); letter-spacing: 2px; margin-top: 20px;">श्रमो रक्षति रक्षितः</p>
+    </footer>
+
+</body>
+</html>
