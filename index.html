@@ -84,21 +84,25 @@
 </head>
 <body>
 
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Yantrajaal:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <section class="hero" id="home">
     <div class="om-symbol">ॐ</div>
-    <h1 class="main-title">श्री चक्रेश्वर मंदिर</h1>
+    
+    <div class="logo-container">
+        <img src="logo.png" alt="श्री चक्रेश्वर मंदिर" class="temple-logo">
+    </div>
+    
     <p class="sub-title">- चाकण</p>
 
-    <div class="social-container">
+    <div class="social-box">
         <p class="follow-text">आमच्याशी जोडून राहा</p>
         <div class="social-links">
-            <a href="https://whatsapp.com/channel/0029Vb6ym6X89iningYJnv10" target="_blank" class="social-icon whatsapp" title="WhatsApp वर सामील व्हा">
+            <a href="https://whatsapp.com/channel/0029Vb6ym6X89iningYJnv10" target="_blank" class="social-icon whatsapp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://www.instagram.com/chakreshwar_mandir_chakan?igsh=MTZybHB1b2d4a2p2Nw==" target="_blank" class="social-icon instagram" title="Instagram वर फॉलो करा">
+            <a href="https://www.instagram.com/chakreshwar_mandir_chakan?igsh=MTZybHB1b2d4a2p2Nw==" target="_blank" class="social-icon instagram">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
@@ -108,74 +112,85 @@
 <style>
 .hero {
     text-align: center;
-    /* Uses a dark overlay so the gold text is easy to read */
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('CBG.png.jpg');
+    /* Using your background image with a dark overlay */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bgbg (1).jpeg');
     background-size: cover;
     background-position: center;
-    padding: 80px 20px;
-    color: white;
+    padding: 100px 20px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .om-symbol {
     font-size: 4.5rem;
-    color: #FFD700; /* Gold color */
-    margin-bottom: -10px;
+    color: #FFD700;
+    margin-bottom: 15px;
+    /* Glow effect */
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    animation: pulse 2s infinite;
 }
 
-.main-title {
-    font-family: 'Yantrajaal', sans-serif;
-    font-size: 5rem; 
-    color: #FFD700;
-    margin: 0;
-    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9); /* Makes text pop */
-    font-weight: 900;
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+.logo-container {
+    max-width: 95%;
+}
+
+.temple-logo {
+    width: 650px; /* Adjust size as needed */
+    max-width: 100%;
+    height: auto;
+    /* This filter gives the white calligraphy a premium GOLD look */
+    filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.8)) sepia(1) saturate(7) brightness(1.2) hue-rotate(10deg);
 }
 
 .sub-title {
     font-family: 'Kalam', cursive;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     color: #ffffff;
-    margin-top: 5px;
-    letter-spacing: 1px;
+    margin-top: 10px;
+    letter-spacing: 2px;
 }
 
-/* Social Container Styling */
-.social-container {
-    margin-top: 40px;
+.social-box {
+    margin-top: 50px;
 }
 
 .follow-text {
     font-family: 'Kalam', cursive;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #FFD700;
-    margin-bottom: 10px;
-    opacity: 0.9;
+    margin-bottom: 15px;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
 }
 
 .social-icon {
-    font-size: 3.5rem; /* Large and easy to click */
+    font-size: 3.8rem;
     color: white;
-    transition: all 0.3s ease;
-    text-decoration: none;
+    transition: all 0.4s ease;
 }
 
-/* Hover Effects */
-.whatsapp:hover {
-    color: #25D366; /* WhatsApp Green */
-    transform: translateY(-8px);
-}
+.whatsapp:hover { color: #25D366; transform: scale(1.2); }
+.instagram:hover { color: #E1306C; transform: scale(1.2); }
 
-.instagram:hover {
-    color: #E1306C; /* Instagram Pink/Red */
-    transform: translateY(-8px);
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .temple-logo { width: 350px; }
+    .sub-title { font-size: 1.8rem; }
+    .social-icon { font-size: 3rem; }
 }
 </style>
 
@@ -292,6 +307,7 @@
 
 </body>
 </html>
+
 
 
 
