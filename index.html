@@ -84,11 +84,100 @@
 </head>
 <body>
 
-    <section class="hero" id="home">
-        <div style="font-size: 4rem; color: var(--primary-gold);">ॐ</div>
-        <h1>श्री चक्रेश्वर मंदिर</h1>
-        <p> - चाकण</p>
-    </section>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Yantrajaal:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<section class="hero" id="home">
+    <div class="om-symbol">ॐ</div>
+    <h1 class="main-title">श्री चक्रेश्वर मंदिर</h1>
+    <p class="sub-title">- चाकण</p>
+
+    <div class="social-container">
+        <p class="follow-text">आमच्याशी जोडून राहा</p>
+        <div class="social-links">
+            <a href="https://whatsapp.com/channel/0029Vb6ym6X89iningYJnv10" target="_blank" class="social-icon whatsapp" title="WhatsApp वर सामील व्हा">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/chakreshwar_mandir_chakan?igsh=MTZybHB1b2d4a2p2Nw==" target="_blank" class="social-icon instagram" title="Instagram वर फॉलो करा">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+.hero {
+    text-align: center;
+    /* Uses a dark overlay so the gold text is easy to read */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('CBG.png.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.om-symbol {
+    font-size: 4.5rem;
+    color: #FFD700; /* Gold color */
+    margin-bottom: -10px;
+}
+
+.main-title {
+    font-family: 'Yantrajaal', sans-serif;
+    font-size: 5rem; 
+    color: #FFD700;
+    margin: 0;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9); /* Makes text pop */
+    font-weight: 900;
+}
+
+.sub-title {
+    font-family: 'Kalam', cursive;
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Social Container Styling */
+.social-container {
+    margin-top: 40px;
+}
+
+.follow-text {
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    font-size: 3.5rem; /* Large and easy to click */
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover Effects */
+.whatsapp:hover {
+    color: #25D366; /* WhatsApp Green */
+    transform: translateY(-8px);
+}
+
+.instagram:hover {
+    color: #E1306C; /* Instagram Pink/Red */
+    transform: translateY(-8px);
+}
+</style>
 
     <nav>
         <a href="#about">इतिहास</a>
@@ -203,6 +292,7 @@
 
 </body>
 </html>
+
 
 
 
